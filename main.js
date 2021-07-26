@@ -50,7 +50,7 @@ function validateCred(card) {
     return (checkForModulo + lastDigit) % 10 === 0;
 }
 
-batch.forEach(element => console.log(validateCred(element)));
+// batch.forEach(element => console.log(validateCred(element)));
 
 function findInvalidCards(element) {
     batch.forEach(function (element) {
@@ -61,7 +61,7 @@ function findInvalidCards(element) {
     })
 };
 findInvalidCards();
-console.log(invalidCred);
+// console.log(invalidCred);
 
 invalidCardCompanies = [];
 
